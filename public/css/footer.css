@@ -1,14 +1,40 @@
-/*footer{
-    width: 100px;
+footer{
+    width: 100%;
 }
-header li{
-    background-color:#63645d ;
-    margin-bottom: 2px;
-    padding: 10px 0;
-    text-align: center;
 
+footer li{
+    background-color: #63645d;
+    margin-bottom: 2px;
+    padding: 10px;
+    text-align: center;
 }
-header li a, footer li{
-    color: #ffffff;
+
+footer li a{
+    color: #FFFFFF;
     text-transform: uppercase;
-}*/
+}
+
+/* desktop */
+@media (min-width:1024px) {
+    footer{
+        padding: 40px;
+        background-color: #b71e15;
+        text-align: center;
+        border-radius: 20px 20px 0 0;
+    }
+
+    footer li{
+        background: none;
+        display: inline-block;
+        border-right: 1px solid #ffffff;
+        padding: 5px 10px;
+    }
+    
+    footer li:last-child{
+        border-right: none;
+    }
+
+    footer li a{
+        text-transform: capitalize;
+    }
+}

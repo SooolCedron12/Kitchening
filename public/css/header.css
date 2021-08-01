@@ -1,28 +1,60 @@
-/*header img{
-    border-radius:50%;
+header {
+    width: 100%;
+}
+
+header img{
+    border-radius: 50%;
     border: solid 1px #92908b;
-    margin:  30px auto;
+    margin: 30px auto;
     display: block;
 }
+
 header a.btn-burger{
     width: 50px;
     padding: 5px;
     background-color: #63645d;
-    display: block;
-    color: #ebebeb;;
+    display:block;
+    color:#ebebeb;
     font-size: 32px;
     margin: 0 auto 30px;
     text-align: center;
-    border-radius: 5px ;
+    border-radius: 5px;
 }
-header li{
-    background-color:#63645d ;
+
+header li {
+    background-color: #63645d;
     margin-bottom: 2px;
     padding: 10px 0;
     text-align: center;
-
 }
-header li a, footer li{
-    color: #ffffff;
+
+header li a {
+    color: #FFFFFF;
     text-transform: uppercase;
-}*/
+}
+
+@media (min-width : 768px) {
+    header a.btn-burger{
+        display:none;
+    }
+
+    header li{
+        float: left;
+        width: 15%;
+        margin-right: 2%;
+        margin-bottom: 30px;
+    }
+
+    header li:last-child{
+        margin-right: 0;
+    }
+
+    header li a {
+        font-size: .9rem;
+    }
+}
+@media (min-width:1024px) {
+    header li a {
+        font-size: 1rem;
+    }
+}
